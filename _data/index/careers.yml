@@ -1,30 +1,87 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
-    i18n: company_a
+    detail: Orolia
+    i18n: orolia
   desc:
-    detail: I worked at Company A ...
-    i18n: company_a_desc
+    detail: I worked at Orolia, which is now part of Safran S.A. I was in the division which develops the GNSS simulator (Skydel). I mainly did C++, Python and MATLAB. I mainly did signal processing/generation.
+    i18n: orolia_desc
   date:
-    detail: Apr. 2016
-    i18n: company_a_date
+    detail: Aug. 2021
+    i18n: orolia_date
   job:
-    detail: CTO
-    i18n: company_a_job
+    detail: Software engineer intern
+    i18n: orolia_job
   icon: fa-plus-square
   present: true
 
 - name:
-    detail: Company B
-    i18n: company_b
+    detail: College (Software engineering)
+    i18n: ets_sw
   desc:
-    detail: I worked at Company B ...
-    i18n: company_b_desc
+    detail: I changed branches of engineering since I wanted to do more artificial intelligence and programming. 
+    i18n: ets_sw_desc
   date:
-    detail: Jun. 2015
-    i18n: company_b_date
+    detail: June. 2021
+    i18n: ets_sw_date
   job:
-    detail: Full Stack Developer
-    i18n: company_b_job
+    detail: student
+    i18n: ets_sw_job
+  icon: fa-plus-square
+
+- name:
+    detail: The lion electric 
+    i18n: lion
+  desc:
+    detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis and work on the implementation of a version control system. 
+    i18n: lion_desc
+  date:
+    detail: Aug. 2021
+    i18n: lion_date
+  job:
+    detail: Hardware design intern
+    i18n: lion_job
+  icon: fa-plus-square
+  present: true
+
+- name:
+    detail: College
+    i18n: ets_ee
+  desc:
+    detail: I started at ÉTS in electrical engineering to do embedded programming. 
+    i18n: ets_ee_desc
+  date:
+    detail: June. 2020
+    i18n: cegep_date
+  job:
+    detail: student
+    i18n: ets_ee_job
+  icon: fa-plus-square
+
+- name:
+    detail: Graduation
+    i18n: cegep
+  desc:
+    detail: I finish my CEGEP at Cégep régional de Lanaudière à Joliette in Electronics Technology - Computers and Networks. 
+    i18n: cegep_desc
+  date:
+    detail: June. 2020
+    i18n: cegep_date
+  job:
+    detail: student
+    i18n: cegep_job
+  icon: fa-plus-square
+
+- name:
+    detail: Equitel
+    i18n: equitel
+  desc:
+    detail: I did an internship at Équi-tel, a telecommunications company. I configured some IP network, managed the cloud infrastructure and carried out several projects. 
+    i18n: equitel_desc
+  date:
+    detail: Jan. 2019
+    i18n: equitel_date
+  job:
+    detail: technology analyst
+    i18n: equitel_job
   icon: fa-plus-square
