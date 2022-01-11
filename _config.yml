@@ -14,9 +14,9 @@ author:  # change following line to your infomation.
   name: Simon Roy  # Be used at blog posts' author.
   first_name: Simon  # Be used at index page about me section.
   last_name: Roy  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/simon-small.jpg  # upload your avatar at directory and edit it.
   github_username: SimonR99  # Leave blank if you don't have now
-  linkedin_id:  # Leave blank if you don't have now
+  linkedin_id: simon-r-9517b5128/  # Leave blank if you don't have now
   facebook_username:   # Leave blank if you don't have now
   twitter_username:   # Leave blank if you don't have now
   email: simonroy99@hotmail.com  # Leave blank if you don't have now
@@ -28,7 +28,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: I am a software engineering student at ETS who is full of ambition, energy and motivation. I like doing projects on the weekends, you should take a look. Welcome to my website.   # Describe yourself.
+  desc: I am a software engineering student at ETS who is full of ambition, energy and motivation. I like doing projects on the weekends, you should take a look. Welcome to my personnal portfolio.   # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
