@@ -2023,12 +2023,12 @@ body {
     -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
     transform: perspective(120px) rotateX(0) rotateY(0);
   }
-
+  
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
   }
-
+  
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -2041,12 +2041,12 @@ body {
     -webkit-transform: perspective(120px) rotateX(0) rotateY(0);
     transform: perspective(120px) rotateX(0) rotateY(0);
   }
-
+  
   50% {
     -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
     transform: perspective(120px) rotateX(-180.1deg) rotateY(0);
   }
-
+  
   100% {
     -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
     transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
@@ -2059,7 +2059,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2072,7 +2072,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2085,7 +2085,7 @@ body {
     -webkit-transform: scaleY(0.4);
     transform: scaleY(0.4);
   }
-
+  
   20% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -2098,7 +2098,7 @@ body {
     -webkit-transform: scaleY(0.4);
     transform: scaleY(0.4);
   }
-
+  
   20% {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
@@ -2111,22 +2111,22 @@ body {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
     transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
+  
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
     transform: translateX(42px) translateY(42px) rotate(-179deg);
   }
-
+  
   50.1% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
     transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
+  
   75% {
     -webkit-transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
     transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
+  
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
@@ -2139,22 +2139,22 @@ body {
     -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5);
     transform: translateX(42px) rotate(-90deg) scale(0.5);
   }
-
+  
   50% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-179deg);
     transform: translateX(42px) translateY(42px) rotate(-179deg);
   }
-
+  
   50.1% {
     -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg);
     transform: translateX(42px) translateY(42px) rotate(-180deg);
   }
-
+  
   75% {
     -webkit-transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
     transform: translateX(0) translateY(42px) rotate(-270deg) scale(0.5);
   }
-
+  
   100% {
     -webkit-transform: rotate(-360deg);
     transform: rotate(-360deg);
@@ -2167,7 +2167,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2181,7 +2181,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2211,7 +2211,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2224,7 +2224,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   50% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2237,7 +2237,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2250,7 +2250,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2263,7 +2263,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2276,7 +2276,7 @@ body {
     -webkit-transform: scale(0);
     transform: scale(0);
   }
-
+  
   40% {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -2289,7 +2289,7 @@ body {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
-
+  
   35% {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
@@ -2302,7 +2302,7 @@ body {
     -webkit-transform: scale3D(1, 1, 1);
     transform: scale3D(1, 1, 1);
   }
-
+  
   35% {
     -webkit-transform: scale3D(0, 0, 1);
     transform: scale3D(0, 0, 1);
@@ -2315,7 +2315,7 @@ body {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
-
+  
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -2328,7 +2328,7 @@ body {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
-
+  
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -2340,7 +2340,7 @@ body {
   0%, 100%, 39% {
     opacity: 0;
   }
-
+  
   40% {
     opacity: 1;
   }
@@ -2351,7 +2351,7 @@ body {
   0%, 100%, 39% {
     opacity: 0;
   }
-
+  
   40% {
     opacity: 1;
   }
@@ -2488,7 +2488,7 @@ body {
       padding: 25px 10px 15px;
     }
   }
-
+  
   .navbar-fixed-top {
     border: none !important;
     &.navbar-scroll {
@@ -2654,7 +2654,28 @@ body {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     margin-top: 60px;
+    padding-bottom: 5%;
+    .card{
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+      margin: 0 auto;
+      float: none; 
+      margin-bottom: 10px; 
+      padding:5%;
+      cursor: pointer;
+    }
+    .card:hover{
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    }
+    .card h3{
+      font-weight: 600;
+      padding:3%;
+    }
   }
+  
   section {
     &.timeline {
       padding-bottom: 30px;

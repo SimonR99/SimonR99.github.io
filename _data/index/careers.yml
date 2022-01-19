@@ -4,7 +4,7 @@
     detail: Orolia
     i18n: orolia
   desc:
-    detail: I worked at Orolia, which is now part of Safran S.A. I was in the division which develops the GNSS simulator (Skydel). I mainly did C++, Python and MATLAB. I mainly did signal processing/generation.
+    detail: I worked at Orolia, which is now part of Safran S.A. I was in the division which develops the GNSS simulator (Skydel). I mainly did C++, Python and MATLAB. I also did signal processing/generation.
     i18n: orolia_desc
   date:
     detail: Aug. 2021
@@ -45,7 +45,7 @@
   present: true
 
 - name:
-    detail: College
+    detail: College (Electrical engineering)
     i18n: ets_ee
   desc:
     detail: I started at ÉTS in electrical engineering to do embedded programming. 

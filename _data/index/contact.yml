@@ -1,0 +1,17 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Email
+  i18n: jalpc
+  icon: fas fa-envelope fa-5x
+  link: mailto:simon.roy.6@ens.etsmtl.ca
+
+- name: Github
+  i18n: cpython
+  icon: fab fa-github fa-5x
+  link: https://github.com/SimonR99
+
+- name: LinkedIn
+  i18n: cpython
+  icon: fab fa-linkedin fa-5x
+  link: https://www.linkedin.com/in/simonroy99/

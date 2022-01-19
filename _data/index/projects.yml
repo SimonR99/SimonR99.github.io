@@ -5,7 +5,7 @@
   i18n: jalpc
   #gh_user: jarrekk
   #repo: Jalpc
-  img: /static/assets/img/landing/python.png
+  img: /static/assets/img/projects/sara.jpg
   desc: I am the software team leader of the ETS Walking Machine club. The goal of the club is to design an autonomous humanoid robot. I take care of managing projects and updating the website.
 
 - name: Light control with camera
@@ -18,5 +18,11 @@
 - name: Drybox
   i18n: google
   url: https://google.com
-  img: /static/assets/img/landing/python.png
+  img: /static/assets/img/projects/drybox.png
+  desc: This is another project.
+
+- name: Magic Wand
+  i18n: wand
+  url: https://google.com
+  img: /static/assets/img/projects/baguette.jpg
   desc: This is another project.
