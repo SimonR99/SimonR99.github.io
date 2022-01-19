@@ -2704,7 +2704,14 @@ body {
     height: 15vw;
     object-fit: cover;
 }
-  
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+  }
   
   .testimonials {
     padding-top: 80px;
