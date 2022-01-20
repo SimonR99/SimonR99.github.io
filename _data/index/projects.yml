@@ -6,23 +6,27 @@
   #gh_user: jarrekk
   #repo: Jalpc
   img: /static/assets/img/projects/sara.jpg
-  desc: I am the software team leader of the ETS Walking Machine club. The goal of the club is to design an autonomous humanoid robot. I take care of managing projects and updating the website.
-  modalDescription : I am the software team leader of the ETS Walking Machine club. The goal of the club is to design an autonomous humanoid robot. I take care of managing projects and updating the website.
+  desc: I am the software team leader of the ETS Walking Machine club.
+  modalDescription : The goal of the club is to design an autonomous humanoid robot. I take care of managing projects and updating the website.
 
 - name: Light control with camera
   i18n: light
-  #gh_user: python
-  #repo: cpython
-  img: /static/assets/img/landing/python.png
+  img: /static/assets/img/projects/camera.jpg
   desc: The project has the goal to control my home with a camera.
-  modalDescription : The project has the goal to control my home with a camera.
+  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a script which makes it possible to control the light with a camera. So when I'm watching a movie and I want to turn off the light, I just point it and it turns off.
 
 - name: Drybox
   i18n: drybox
   img: /static/assets/img/projects/drybox.png
-  desc: This is another project.
+  desc: The project is a IOT server that can perform OTA firmware upgrade.
+  modalDescription : This project was done in collaboration with Daniel Bilodeau. I took care of the programming part and he took care of the mechanical and electrical part. We have created a tool to keep 3D printing spools dry. For this project, I used Django to make a responsive website that offers the possibility to see the humidity history of a DryBox, to provide an authentication system and to provide an update firmware server for an esp8266.
 
 - name: Magic Wand
   i18n: wand
   img: /static/assets/img/projects/baguette.jpg
-  desc: This is another project.
+  desc: This is a wand that can control the color of a lamp. I use C language for this project.
+
+- name: AI vs Game
+  i18n: covid
+  img: /static/assets/img/projects/neat.png
+  desc: For this project, I created a simple game and an AI. I used a genetic algorithm for this AI.

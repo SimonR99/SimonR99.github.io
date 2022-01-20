@@ -7,8 +7,8 @@
 
 - label: Software/firmware
   id : software
-  aspects: Django, Tensorflow, MEAN stack, Unity, Wireshark
-  percentage: 80, 50, 25, 30, 50
+  aspects: Django, Tensorflow, MEAN stack, Unity, Wireshark, ROS2
+  percentage: 80, 50, 35, 40, 50, 70
 
 - label: Hardware/working environnement
   id : hardware
