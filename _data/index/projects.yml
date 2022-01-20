@@ -17,7 +17,7 @@
 
 - name: Drybox
   i18n: drybox
-  img: /static/assets/img/projects/dry.png
+  img: /static/assets/img/projects/dry.jpg
   desc: The project is a IOT server that can perform OTA firmware upgrade.
   modalDescription : This project was done in collaboration with Daniel Bilodeau. I took care of the programming part and he took care of the mechanical and electrical part. We have created a tool to keep 3D printing spools dry. For this project, I used Django to make a responsive website that offers the possibility to see the humidity history of a DryBox, to provide an authentication system and to provide an update firmware server for an esp8266.
 
