@@ -28,7 +28,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa fa-linux
     - name: fas fa-robot
-  desc: I am a software engineering student at ETS who is full of ambition, energy, and motivation. My interests are in space, robotics, and artificial intelligence. I like doing projects on the weekends, you should take a look. Welcome to my portfolio!   # Describe yourself.
+  desc: I am a software engineering student at ETS who is full of ambition, energy, and motivation. My interests are in aerospatial, quantum computing, robotics, and artificial intelligence. I like doing projects on the weekends, you should take a look. Welcome to my portfolio!   # Describe yourself.
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
