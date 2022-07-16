@@ -1,9 +1,6 @@
 # Portfolio
 
-feel free to look at my portfolio
+Feel free to look at my [portfolio](https://simonr99.github.io/)
 
-[]: # Language: markdown
-[]: # Path: portfolio/index.md
+The template is based on [Jalpc template for jekyll](https://github.com/jarrekk/Jalpc/).
 
-The template is based on [GitHub's Markdown template](https://help.github.com/articles/creating-a-repository/).
-<https://jarrekk.github.io/Jalpc/>
