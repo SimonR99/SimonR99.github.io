@@ -36,7 +36,7 @@
     detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis and work on the implementation of a version control system. After my internship, I receive a <b>productivity scholarship.</b>
     i18n: lion_desc
   date:
-    detail: Aug. 2021
+    detail: Jan. 2021
     i18n: lion_date
   job:
     detail: Hardware design intern
@@ -51,7 +51,7 @@
     detail: I started at ÉTS in electrical engineering to do embedded programming. 
     i18n: ets_ee_desc
   date:
-    detail: June. 2020
+    detail: Aug. 2020
     i18n: cegep_date
   job:
     detail: student
