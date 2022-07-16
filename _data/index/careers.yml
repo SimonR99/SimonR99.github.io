@@ -19,7 +19,7 @@
     detail: College (Software engineering)
     i18n: ets_sw
   desc:
-    detail: I changed branches of engineering since I wanted to do more artificial intelligence and programming. 
+    detail: I changed branches of engineering since I wanted to do more programming. During the following semester, I took additional credits to avoid being delayed in my degree.
     i18n: ets_sw_desc
   date:
     detail: June. 2021
@@ -30,10 +30,10 @@
   icon: fa-plus-square
 
 - name:
-    detail: The lion electric (Productivity Scholarship)
+    detail: The lion electric
     i18n: lion
   desc:
-    detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis and work on the implementation of a version control system. 
+    detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis and work on the implementation of a version control system. After my internship, I receive a <b>productivity scholarship.</b>
     i18n: lion_desc
   date:
     detail: Aug. 2021
