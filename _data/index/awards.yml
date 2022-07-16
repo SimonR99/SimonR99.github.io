@@ -1,0 +1,10 @@
+# award data
+
+- name: Excellence Scholarship from MES
+  id : mes_awards_2021
+  desc : This award is given by the Ministry of Education and Higher Education of Quebec to students who perform in a field related to technology.
+
+- name: Productivity Scholarship from Lion
+  id : lion_awards_2021
+  desc : Lion gives this award to an intern who demarked himself during his internship.
+

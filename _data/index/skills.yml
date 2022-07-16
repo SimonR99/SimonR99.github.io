@@ -2,15 +2,27 @@
 
 - label: Programming language
   id : progammingLanguage
-  aspects: Python, R, Java, C++, HTML, CSS, Javascript, Typescript
+  aspects: Python, R, Java, C++, MATLAB, HTML, CSS, Javascript, Typescript
   percentage: 80, 60, 60, 60, 70, 50, 60, 40
+  main : Python, C, Java, C++, R, typescript
 
-- label: Software/firmware
+- label: Library/framework
+  id : library
+  main : Django, ROS2, React, Qt (python and c++), Qiskit, Node.js
+
+- label: Artificial Intelligence
+  id : ai_library
+  main : Tensorflow, sklearn, pandas, numpy, tensorboard, nltk, OpenCV
+
+- label: Software
   id : software
-  aspects: Django, Tensorflow, MEAN stack, Unity, Wireshark, ROS2
-  percentage: 80, 50, 35, 40, 50, 70
 
-- label: Hardware/working environnement
+  main : VSCode, Docker, Wireshark, Git, Unity, Android studio, Fusion360
+
+- label: Hardware
   id : hardware
-  aspects: VMWare ESXI, Windows Server 2019, Linux - Ubuntu, VSCode, Git
-  percentage: 70, 60, 70, 70, 70
+  main : Linux, ESXI, Windows Server 2019, Windows
+
+- label: Soft Skills
+  id : soft
+  main : Leadership, Creativity, Adaptability, Empathy

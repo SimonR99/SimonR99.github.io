@@ -6,27 +6,34 @@
   #gh_user: jarrekk
   #repo: Jalpc
   img: /static/assets/img/projects/sara.jpg
-  desc: I am the software team leader of the ETS Walking Machine club.
-  modalDescription : The goal of the club is to design an autonomous humanoid robot. I take care of managing projects and updating the website.
+  desc: Software Team Lead, Walking Machine (University Robotics Club)
+  stack: "Technology used : Python, C++, ROS2, ROS, Tensorflow (NLP and C.V.), OpenCV"
+  modalDescription : The goal of the club is to design an autonomous humanoid robot. The club is currently creating a new robot to participate in the European robotics competition. I mainly work on building the supporting infrastructure (Docker, testing, git, Jira), computer vision and language processing.
 
 - name: Light control with camera
   i18n: light
   img: /static/assets/img/projects/camera.jpg
-  desc: The project has the goal to control my home with a camera.
-  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a script which makes it possible to control the light with a camera. So when I'm watching a movie and I want to turn off the light, I just point it and it turns off.
+  desc: The project had the goal to control my home with a camera.
+  stack: "Technology used : Python, OpenCV, Raspberry pi and Home assistant"
+  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a script which makes it possible to control the light with a camera. So when I'm watching a movie and I want to turn off the light, I just point the light and it turns off.
 
 - name: Drybox
   i18n: drybox
   img: /static/assets/img/projects/dry.jpg
   desc: The project is a IOT server that can perform OTA firmware upgrade.
-  modalDescription : This project was done in collaboration with Daniel Bilodeau. I took care of the programming part and he took care of the mechanical and electrical part. We have created a tool to keep 3D printing spools dry. For this project, I used Django to make a responsive website that offers the possibility to see the humidity history of a DryBox, to provide an authentication system and to provide an update firmware server for an esp8266.
+  stack: "Technology used : Django, Arduino, SQLite"
+  modalDescription : This project was done in collaboration with an EE student. I took care of the programming part and he took care of the mechanical and electrical part. We created a tool to keep 3D printing spools dry. For this project, I used Django to make a responsive website that offers the possibility to see the humidity history of the dry box, to provide an authentication system and to provide an update firmware server for an esp8266.
 
-- name: Magic Wand
+- name: Magic Wand (Remote)
   i18n: wand
   img: /static/assets/img/projects/baguette.jpg
+  stack: "Technology used : Arduino, C, 3D printing"
   desc: This is a wand that can control the color of a lamp. I use C language for this project.
+  modalDescription : My nephew wanted to have a magic wand and control things around the house. I created a magic wand that allows him to control the color of a lamp and make a bear talk. The project is mainly composed of an Arduino, an accelerometer, and a radio communication system. I used the C language to carry out the project.
 
-- name: AI vs Game
+- name: AI vs Covid (Game)
   i18n: covid
   img: /static/assets/img/projects/neat.png
+  stack: "Technology used : Python, Pygame"
   desc: For this project, I created a simple game and an AI. I used a genetic algorithm for this AI.
+  modalDescription: The first step was to build a game that can be controlled by a robot. The goal of the game is to avoid viruses. The game allows you to play or to watch a robot learn how the game works. The robot uses an algorithm called NEAT (NeuroEvolution of Augmenting Topologies). It is a genetic algorithm for the generation of evolving artificial neural networks.

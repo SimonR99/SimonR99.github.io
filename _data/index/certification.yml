@@ -1,6 +1,6 @@
 # certification data
 
-- label: "Tensorflow : TensorFlow Developer Certificate"
+- name : "Tensorflow : TensorFlow Developer Certificate"
   id : tensorflow_certification
-  description : The tensorflow certification demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems.
+  desc : The tensorflow certification demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems.
 

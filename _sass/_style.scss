@@ -2638,8 +2638,13 @@ body {
     }
   }
   .img-small {
-    height: 88px;
-    width: 88px;
+    height: 200px;
+    width: 200px;
+  }
+
+  .skills-title {
+    background-color: #3385FF;
+    color: #fff;
   }
   .btn-primary {
     font-weight: 600;
@@ -2649,8 +2654,8 @@ body {
   .flip-card {
     background-color: transparent;
     border: 1px solid #f1f1f1;
-    height: 88px;
-    width: 88px;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
     border-radius: 50%;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -2672,6 +2677,17 @@ body {
   /* Position the front and back side */
   .flip-card-front, .flip-card-back {
     position: absolute;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flip-card-text {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
   }
@@ -2701,8 +2717,9 @@ body {
 
   .card-img-top {
     width: 100%;
-    height: 15vw;
-    object-fit: cover;
+    height: 20vw;
+    max-height: min-content;
+    object-fit: contain;
 }
   .row.display-flex {
     display: flex;
