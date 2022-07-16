@@ -33,7 +33,7 @@
     detail: The lion electric
     i18n: lion
   desc:
-    detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis and work on the implementation of a version control system. After my internship, I receive a <b>productivity scholarship.</b>
+    detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis, and work on the implementation of a version control system. After my internship, I receive a <b>productivity scholarship.</b>
     i18n: lion_desc
   date:
     detail: Jan. 2021
@@ -76,7 +76,7 @@
     detail: Equitel
     i18n: equitel
   desc:
-    detail: I did an internship at Équi-tel, a telecommunications company. I configured some IP network, managed the cloud infrastructure and carried out several projects. 
+    detail: I did an internship at Équi-tel, a telecommunications company. I configured some IP networks, managed the cloud infrastructure, and carried out several projects.
     i18n: equitel_desc
   date:
     detail: Jan. 2019
