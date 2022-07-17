@@ -1,16 +1,15 @@
 # competiton data
 
-- name: BIG Quantum Hackathon
+- name: BIG Quantum Hackathon 2022
   id : quantum_hackathon_2022
-  desc : The goal of the competition was to create a quantum algorithm to solve an industrial problem. During this competition, my team and I develop a quantum support vector machine to classify text. (3rd place)
-  position : "Position : 3rd place"
+  desc : The goal of the competition was to create a quantum algorithm to solve an industrial problem. During this competition, my team and I developped a quantum support vector machine to classify text. (3rd place)
+  position : "We finished third in a highly competitive field"
 
-- name: Hack For Good - Body Hack
+- name: Hack For Good - Body Hack 2021
   id : body_hack_2021
-  desc : During this competition, we design of a tool to test health literacy.
-  position : "Position : participation"
+  desc : During this competition, we designed of a tool to test health literacy.
 
 - name: Nasa space app challence 2020
   id : space_app_2020
-  desc : During this competition, my team developed an artificial intelligence capable of predicting forest fires based on satellite data. (First place (Halifax))
-  position : "Position : first place (Halifax)"
+  desc : During this competition, my team developed artificial intelligence capable of predicting forest fires based on satellite data. (First place (Halifax))
+  position : "We finish first in our section"

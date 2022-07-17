@@ -14,7 +14,7 @@ author:  # change following line to your infomation.
   name: Simon Roy  # Be used at blog posts' author.
   first_name: Simon  # Be used at index page about me section.
   last_name: Roy  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/simon-small.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/profilesquare.jpg  # upload your avatar at directory and edit it.
   github_username: SimonR99  # Leave blank if you don't have now
   linkedin_id: simon-r-9517b5128/  # Leave blank if you don't have now
   facebook_username:   # Leave blank if you don't have now
@@ -28,7 +28,7 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa fa-linux
     - name: fas fa-robot
-  desc: I am a software engineering student at ETS who is full of ambition, energy, and motivation. My interests are in aerospatial, artificial intelligence, quantum computing and robotics. I like doing projects on the weekends, you should take a look. Welcome to my portfolio!   # Describe yourself.
+  desc: I am a software engineering student at ETS who is full of ambition, energy, and motivation. I'm starting my 3rd years of university and I'm currently looking for an internship. My interests are in aerospatial, artificial intelligence, quantum computing and robotics. I like doing coding projects during my free time, you should take a look. Welcome to my portfolio!   # Describe yourself.
   gpa : "GPA : 4.15/4.3"
 
 # comment

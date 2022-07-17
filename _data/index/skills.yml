@@ -1,6 +1,6 @@
 # skills section data
 
-- label: Programming language
+- label: Programming languages
   id : progammingLanguage
   aspects: Python, R, Java, C++, MATLAB, HTML, CSS, Javascript, Typescript
   percentage: 80, 60, 60, 60, 70, 50, 60, 40

@@ -13,9 +13,9 @@
 - name: Light control with camera
   i18n: light
   img: /static/assets/img/projects/camera.jpg
-  desc: The project had the goal to control my home with a camera.
+  desc: The project had the goal to control my domotic system with a camera.
   stack: "Technology used : Python, OpenCV, Raspberry pi and Home assistant"
-  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a script which makes it possible to control the light with a camera. So when I'm watching a movie and I want to turn off the light, I just point the light and it turns off.
+  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a script which makes it possible to control the lights with a camera. For exemple, when I'm watching a movie and I want to turn off the light, I just point the light and it turns off.
 
 - name: Drybox
   i18n: drybox

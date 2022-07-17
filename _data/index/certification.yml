@@ -2,5 +2,7 @@
 
 - name : "Tensorflow : TensorFlow Developer Certificate"
   id : tensorflow_certification
-  desc : The tensorflow certification demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems.
-
+  desc : The tensorflow certification demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems. (Valid until May 23, 2025)
+  expiration : "Expiration : May 23, 2025"
+  issue : "Issue : May 23, 2022"
+  link : https://www.credential.net/535e94af-79b0-4f3b-918c-02624431fe54#gs.6lskll

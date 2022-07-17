@@ -1,13 +1,13 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Orolia
+    detail: Orolia (Internship)
     i18n: orolia
   desc:
-    detail: I worked at Orolia, which is now part of Safran S.A. I was in the division which develops the GNSS simulator (Skydel). I mainly did <b>C++, Python and MATLAB</b>. I also did signal processing/generation.
+    detail: I worked at Orolia, which is now part of Safran S.A. I was in the division which develops the GNSS simulator (Skydel). I mainly work with <b>C++, Python and MATLAB</b>. I also work on signal processing/generation.
     i18n: orolia_desc
   date:
-    detail: Aug. 2021
+    detail: Aug. 2021 to Dec. 2021
     i18n: orolia_date
   job:
     detail: Software engineer intern
@@ -16,10 +16,10 @@
   present: true
 
 - name:
-    detail: College (Software engineering)
+    detail: University (Software engineering)
     i18n: ets_sw
   desc:
-    detail: I changed branches of engineering since I wanted to do more programming. During the following semester, I took additional credits to avoid being delayed in my degree.
+    detail: I started in electrical engineering and changed to software engeneering since I discovered that I prefer high level programming. During the following semester, I took additional credits to avoid being delayed in my degree.
     i18n: ets_sw_desc
   date:
     detail: June. 2021
@@ -30,13 +30,13 @@
   icon: fa-plus-square
 
 - name:
-    detail: The lion electric
+    detail: Lion electric (Internship)
     i18n: lion
   desc:
-    detail: My internship was mainly remote. I did a lot of circuit simulation, microcontroller analysis, and work on the implementation of a version control system. After my internship, I receive a <b>productivity scholarship.</b>
+    detail: During this internship, I did circuit simulation, microcontroller analysis, and work on the implementation of a version control system. Following my internship, I receive a <b>productivity scholarship.</b>
     i18n: lion_desc
   date:
-    detail: Jan. 2021
+    detail: Jan. 2021 to May. 2021
     i18n: lion_date
   job:
     detail: Hardware design intern
@@ -45,7 +45,7 @@
   present: true
 
 - name:
-    detail: College (Electrical engineering)
+    detail: University (Electrical engineering)
     i18n: ets_ee
   desc:
     detail: I started at ÉTS in electrical engineering to do embedded programming. 
@@ -59,13 +59,13 @@
   icon: fa-plus-square
 
 - name:
-    detail: Graduation
+    detail: "CEGEP degree in Electronics (Computers and Networks)"
     i18n: cegep
   desc:
-    detail: I finish my CEGEP at Cégep régional de Lanaudière à Joliette in Electronics Technology - Computers and Networks. 
+    detail: I obtain my degree in Electronics Technology - Computers and Networks at Cégep régional de Lanaudière à Joliette. 
     i18n: cegep_desc
   date:
-    detail: June. 2020
+    detail: Sept. 2017 to June. 2020
     i18n: cegep_date
   job:
     detail: student
@@ -76,7 +76,7 @@
     detail: Equitel
     i18n: equitel
   desc:
-    detail: I did an internship at Équi-tel, a telecommunications company. I configured some IP networks, managed the cloud infrastructure, and carried out several projects.
+    detail: I did an internship at Équi-tel, a telecommunications company. During my internship, I configured IP networks and configured telephone systems. I continued to work after my internship to manage the cloud infrastructure and lead several projects.
     i18n: equitel_desc
   date:
     detail: Jan. 2019

@@ -18,7 +18,7 @@
             </div>
             {% endfor %}
             <br>
-            <h1 class="text-center skills-title"> Competitions </h1>
+            <h1 class="text-center skills-title"> Contests </h1>
             <hr>
             {% for competition in site.data.index.competition %}
             <div id="competition.id">
@@ -48,8 +48,10 @@
             {% for certification in site.data.index.certification %}
             <div id="certification.id">
                 <p>
-                    <h3><span data-i18n="skills.{{ certification.name }}">{{ certification.name }}</span></h3>
+                    <h3><a href="{{ certification.link }}"><span data-i18n="skills.{{ certification.name }}">{{ certification.name }}</span></a></h3>
                     <p><span data-i18n="skills.{{ certification.desc }}">{{ certification.desc }} </span></p>
+                    <p><span data-i18n="skills.{{ certification.issue }}">{{ certification.issue }} </span></p>
+                    <p><span data-i18n="skills.{{ certification.expiration }}">{{ certification.expiration }} </span></p>
                 </p>
             </div>
             {% endfor %}
