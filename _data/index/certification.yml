@@ -1,5 +1,13 @@
 # certification data
 
+- name : "IBM Certified Associate Developer - Qiskit v0.2X"
+  id : qiskit_certification
+  desc : The IBM Qiskit certification demonstrates proficiency in using Qiskit SDK to address quantum computing challenges using the Python programming language.
+  expiration : "None"
+  issue : "Issue : September 16, 2023"
+  link : https://www.credly.com/badges/aed7ae47-9a72-4d6b-aa78-3746ad5cd340/linked_in_profile
+
+
 - name : "Tensorflow : TensorFlow Developer Certificate"
   id : tensorflow_certification
   desc : The tensorflow certification demonstrate the proficiency in using TensorFlow to solve deep learning and ML problems. (Valid until May 23, 2025)

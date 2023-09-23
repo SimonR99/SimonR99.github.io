@@ -1,5 +1,36 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
+
+- name:
+    detail: Planetary robotics engineer (Internship)
+    i18n: csa
+  desc:
+    detail: I work as a intern in planetary robotics at the Canadian Space Agency (CSA) in Montréal. I am responsible for managing and developing a mission planing tool for the lunar rover. I mainly use <b>Django and React</b>.
+    i18n: csa_desc
+  date:
+    detail: Since Aug. 2022
+    i18n: csa_date
+  job:
+    detail: Planetary robotics intern
+    i18n: csa_job
+  icon: fa-plus-square
+  present: true
+
+- name:
+    detail: Lab assistant (Algorithmic aspects of quantum computing)
+    i18n: ets
+  desc:
+    detail: During the summer of 2023, I was as a lab assistant for the course MTI882B (Algorithmic aspects of quantum computing) at ÉTS. My responsibilities included creating learning resources, specifically Notebooks. I also taught students about Pennylane and various quantum computing algorithms.
+    i18n: ets_desc
+  date:
+    detail: Summer 2023
+    i18n: ets_date
+  job:
+    detail: ÉTS lab assistant
+    i18n: ets_job
+  icon: fa-plus-square
+  present: true
+
 - name:
     detail: Orolia (Internship)
     i18n: orolia

@@ -1,4 +1,13 @@
 # competiton data
+- name: EnRicH
+  id : enrich23
+  desc : I did this competition with the student club CAPRA where I was in charge of the mapping and navigation of the robot. The goal was to rescue a dummy in a radioactive nuclear power plant.
+  position : "Best in class in search and rescue challenge"
+
+- name: Xanadu QHack23
+  id : qhack23
+  desc : Various quantum computing challenges were proposed by Xanadu. During this competition, we work with Hamiltonian simulation and quantum machine learning.
+  position : "We finished 25/726 on the coding challenge"
 
 - name: BIG Quantum Hackathon 2022
   id : quantum_hackathon_2022
