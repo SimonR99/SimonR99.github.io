@@ -1,15 +1,9 @@
-version: '3'
+# no version needed since 2020
 
 services:
   jekyll:
-    build: .
+    image: bretfisher/jekyll-serve
     volumes:
-      - .:/srv/jekyll
-      - jekyll-bundle:/usr/local/bundle
+      - .:/site
     ports:
-      - "4000:4000"
-    environment:
-      - JEKYLL_ENV=development
-
-volumes:
-  jekyll-bundle:
+      - '4000:4000'

@@ -14,6 +14,11 @@
                 {{project.modalDescription}}
                 <hr>
                 {{project.stack}}
+                
+                {% if project.url %}
+                    <hr>
+                    Link : <a href="{{ project.url }}" target="_blank" class="button"><span class="navy">{{ project.url }}</span></a>
+                {% endif %}
             </div>          
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

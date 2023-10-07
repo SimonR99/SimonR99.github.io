@@ -1,4 +1,7 @@
 # skills section data
+- label: Quantum computing
+  id : quantum_computing
+  main : Qiskit, Pennylane, Pulser, Q#, Snowflurry, QAOA, QML
 
 - label: Programming languages
   id : progammingLanguage
@@ -8,15 +11,14 @@
 
 - label: Library/framework
   id : library
-  main : Django, ROS2, React, Qt (python and c++), Qiskit, Node.js
+  main : Django, ROS2, React, Qt (python and c++), Node.js
 
 - label: Artificial Intelligence
   id : ai_library
-  main : Tensorflow, sklearn, pandas, numpy, tensorboard, nltk, OpenCV
+  main : Tensorflow, sklearn, pandas, numpy, tensorboard, nltk, OpenCV, pytorch
 
 - label: Software
   id : software
-
   main : VSCode, Docker, Wireshark, Git, Unity, Android studio, Fusion360
 
 - label: Hardware

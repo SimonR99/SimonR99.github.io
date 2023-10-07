@@ -14,7 +14,7 @@ author:  # change following line to your infomation.
   name: Simon Roy  # Be used at blog posts' author.
   first_name: Simon  # Be used at index page about me section.
   last_name: Roy  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/profilesquare.jpg  # upload your avatar at directory and edit it.
+  avatar: /static/assets/img/landing/profile_ibm.jpg  # upload your avatar at directory and edit it.
   github_username: SimonR99  # Leave blank if you don't have now
   linkedin_id: simon-r-9517b5128/  # Leave blank if you don't have now
   facebook_username:   # Leave blank if you don't have now
@@ -28,25 +28,12 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-solid fa-atom
     - name: fas fa-robot
-  desc: I am a software engineering student at ETS who is full of ambition, energy, and motivation. I'm starting my 3rd years of university and I'm currently looking for an internship. My interests are in aerospatial, artificial intelligence, quantum computing and robotics. I like doing coding projects during my free time, you should take a look. Welcome to my portfolio!   # Describe yourself.
+  desc: I am a software engineering student at ETS, finishing my third year with a strong passion for innovation and technology. While I possess a diverse range of interests – from aerospace and artificial intelligence to robotics – it's quantum computing that captivates me the most. I am keenly interested in pursuing an internship outside Québec in this field. My ambition, energy, and motivation have driven me to work on various coding/research projects in my free time. I invite you to explore my portfolio and see the potential I can bring to your organization. Welcome!   # Describe yourself.
   gpa : "GPA : 4.15/4.3"
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
   name: jalpc
-
-# analytics
-## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  id: UA-93473370-3
-
-## google optimize
-go:
-  # id:
-
-## growingIO
-gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
-  # id:
 
 ## donation
 donation: off  # type 'on'/'off' to choice display donation button at post page or not

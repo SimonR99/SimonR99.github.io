@@ -1,14 +1,40 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Walking Machine - student club - Software Lead
-  i18n: walking
+
+- name: QuantumÉTS - Founder & Quantum Software developer
+  i18n: quantum
+  url : https://quantumets.etsmtl.ca/
+  img: /static/assets/img/projects/quantum.jpg
+  desc: QuantumÉTS is a student club that aims to democratize quantum computing, participate into various quantum computing challenges and organize events.
+  stack: "Technology used : Qiskit, Pennylane, Pulser, Python, NLP, Snowflurry"
+  modalDescription : In the club, we participate in various competitions such as QHack and BIG Quantum Hackathon, and organize events to promote quantum computing awareness. For instance, we hosted a workshop on quantum information theory and held multiple lectures on the subject. As the founder of the club, I manage several projects including Vehicle Speed Optimization using Hamiltonian and Quantum Education Game, besides organizing events.
+
+- name: Various Quantum Algorithms
+  i18n: quantum_algo
+  url : https://github.com/SimonR99/qiskit-algorithm
+  img: /static/assets/img/projects/quantum_algo.png
+  desc: Project exploring quantum algorithms and their practical applications across different data sets.
+  stack: "Technology used : Qiskit, Python, NLP"
+  modalDescription : The Qiskit Algorithm Notebook repository features Jupyter notebooks delving into various quantum algorithms and their applications, like quantum clustering with the Iris dataset and text classification using Quantum Support Vector Machines for sentiment analysis.
+
+- name: Quantum Education Game
+  i18n: quantum_game
+  url : https://simonr99.itch.io/entangledexplorer
+  img: /static/assets/img/projects/quantum_game.png
+  desc: A game to teach quantum computing concepts to the general public.
+  stack: "Technology used : Godot, Qiskit, Python"
+  modalDescription : Entangled Explorer is a game that aims to teach quantum computing concepts to the general public. The game is a 2D platformer where the player has to solve puzzles using quantum mechanics. The game is available on itch.io.
+
+- name: Capra - student club
+  i18n: capra
   #gh_user: jarrekk
   #repo: Jalpc
-  img: /static/assets/img/projects/sara.jpg
-  desc: Software Team Lead, Walking Machine (University Robotics Club)
-  stack: "Technology used : Python, C++, ROS2, ROS, Tensorflow (NLP and C.V.), OpenCV"
-  modalDescription : The goal of the club is to design an autonomous humanoid robot. The club is currently creating a new robot to participate in the European robotics competition. I mainly work on building the supporting infrastructure (Docker, testing, git, Jira), computer vision and language processing.
+  url : https://www.clubcapra.com/
+  img: /static/assets/img/projects/markhor.jpg
+  desc: In the student club, I lead the navigation and mapping project
+  stack: "Technology used : Python, C++, ROS2, ROS"
+  modalDescription : The goal of the club is to design and program robot dedicated to search and rescue in rugged environments. We participated to the EnRicH competition in 2023 and we won "Best in class - search and rescue".
 
 - name: Light control with camera
   i18n: light

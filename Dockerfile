@@ -1,17 +1,27 @@
-# Use the official Jekyll image as the base
-FROM jekyll/jekyll:latest
+FROM ruby:3.1-slim-bullseye as jekyll
 
-# Set the working directory in the container
-WORKDIR /srv/jekyll
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy the Gemfile and Gemfile.lock into the image
-COPY Gemfile Gemfile.lock ./
+# used in the jekyll-server image, which is FROM this image
+COPY docker-entrypoint.sh /usr/local/bin/
 
-# Install the gems
-RUN bundle install
+RUN gem update --system && gem install jekyll && gem cleanup
 
-# Copy the content of the local src directory to the working directory
-COPY . .
+EXPOSE 4000
 
-# Specify the command to run on container start
-CMD ["jekyll", "serve", "--watch", "--drafts", "--host", "0.0.0.0"]
+WORKDIR /site
+
+ENTRYPOINT [ "jekyll" ]
+
+CMD [ "--help" ]
+
+# build from the image we just built with different metadata
+FROM jekyll as jekyll-serve
+
+# on every container start, check if Gemfile exists and warn if it's missing
+ENTRYPOINT [ "docker-entrypoint.sh" ]
+
+CMD [ "bundle", "exec", "jekyll", "serve", "--force_polling", "-H", "0.0.0.0", "-P", "4000" ]
