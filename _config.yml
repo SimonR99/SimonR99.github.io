@@ -2,7 +2,7 @@
 
 # Website settings
 title: Simon Roy
-description: Simon's portfolio, using Jalpc template.
+description: Portfolio showcasing my projects and skills
 keywords: Simon Roy,portfolio
 baseurl:   # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: https://SimonR99.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
