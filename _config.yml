@@ -28,8 +28,8 @@ author:  # change following line to your infomation.
   skill_icon2:
     - name: fa-solid fa-atom
     - name: fas fa-robot
-  desc: I am a software engineering student at ETS, finishing my third year with a strong passion for innovation and technology. While I possess a diverse range of interests – from aerospace and artificial intelligence to robotics – it's quantum computing that captivates me the most. I am keenly interested in pursuing an internship outside Québec in this field. My ambition, energy, and motivation have driven me to work on various coding/research projects in my free time. I invite you to explore my portfolio and see the potential I can bring to your organization. Welcome!   # Describe yourself.
-  gpa : "GPA : 4.15/4.3"
+  desc: Hi! I’m a software engineering student at ÉTS, finishing my fourth year, with a strong passion for innovation and technology. I’m particularly fascinated by quantum computing, artificial intelligence, and robotics. I love diving into coding and research projects in my free time, always eager to learn and explore new possibilities. Feel free to check out my portfolio and see what I’ve been up to. Welcome, and I hope you enjoy your visit!   # Describe yourself.
+  gpa : "GPA : 4.1/4.3"
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
