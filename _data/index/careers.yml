@@ -2,7 +2,7 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
-    detail: Quantum Machine Learning Research Intern
+    detail: Quantum Machine Learning Research (Internship)
     i18n: sherbrooke (UdeS)
   desc:
     detail: I completed a research internship in quantum machine learning with Professor Kourtis at the University of Sherbrooke during the summer of 2024. I focused on developing new classification algorithms, leveraging tools such as <b>Torch, NumPy, and other data science libraries</b>..
@@ -69,7 +69,7 @@
     detail: I started in electrical engineering and changed to software engeneering since I discovered that I prefer high level programming. During the following semester, I took additional credits to avoid being delayed in my degree.
     i18n: ets_sw_desc
   date:
-    detail: June. 2021
+    detail: June. 2021 to Dec. 2024
     i18n: ets_sw_date
   job:
     detail: student
@@ -92,20 +92,6 @@
   present: true
 
 - name:
-    detail: University (Electrical engineering)
-    i18n: ets_ee
-  desc:
-    detail: I started at ÉTS in electrical engineering to do embedded programming. 
-    i18n: ets_ee_desc
-  date:
-    detail: Aug. 2020
-    i18n: cegep_date
-  job:
-    detail: student
-    i18n: ets_ee_job
-  icon: fa-plus-square
-
-- name:
     detail: "CEGEP degree in Electronics (Computers and Networks)"
     i18n: cegep
   desc:
@@ -123,7 +109,7 @@
     detail: Equitel
     i18n: equitel
   desc:
-    detail: I did an internship at Équi-tel, a telecommunications company. During my internship, I configured IP networks and configured telephone systems. I continued to work after my internship to manage the cloud infrastructure and lead several projects.
+    detail: I did an internship at Équi-tel, a telecommunications company. During my internship, I configured IP networks and configured telephone systems. I continued to work after my internship to manage the cloud infrastructure and lead several projects involving linux.
     i18n: equitel_desc
   date:
     detail: Jan. 2019

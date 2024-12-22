@@ -19,6 +19,10 @@
                     <hr>
                     Link : <a href="{{ project.url }}" target="_blank" class="button"><span class="navy">{{ project.url }}</span></a>
                 {% endif %}
+                {% if project.video %}
+                    <hr>
+                    Video : <a href="{{ project.video }}" target="_blank" class="button"><span class="navy">{{ project.video }}</span></a>
+                {% endif %}
             </div>          
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -2,7 +2,33 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 
-- name: QuantumÉTS - Founder & Quantum Software developer
+- name: Goat Brain
+  i18n: goat_brain
+  url : https://github.com/SimonR99/goat-planner
+  video: https://youtu.be/d-8-XF0w_FI
+  img: /static/assets/img/projects/goat_brain.png
+  desc: A fine-tuned agent system that controls a robot using higher level instructions. 
+  stack: "Technology used : HuggingFace, LoRA, ROS2, RAG, Behavior Tree"
+  modalDescription : Goat Brain is a fine-tuned agent system that controls a robot using higher level instructions. The system is able to perform tasks by generating a behavior tree compatible with ROS2 and propose a visual interface to let the user discuss with the system.
+
+- name: Shepherd
+  i18n: shepherd
+  url : https://github.com/kapr-ai/shepherd.git
+  img: /static/assets/img/projects/shepherd.png
+  desc: A semantic mapping system for a mobile robot.
+  stack: "Technology used : Habitat-Sim, Gym, Pytorch, HuggingFace, DB-SCAN, FastSAM, CLIP, BLIP"
+  modalDescription : Shepherd is a semantic mapping system for a mobile robot. The system is able to find objects, associate a meaning to them and let the user query the map for later use.
+
+- name: NTN simulator (Q-learning & PSO)
+  i18n: optimization_ntn
+  url : https://github.com/SimonR99/optimisationNTN
+  img: /static/assets/img/projects/optimisation_ntn.png
+  desc: Optimization of a non-terrestial network using multiple optimization algorithms.
+  stack: "Technology used : Q-learning, PSO, Python, Genetic Algorithm, Differential Evolution, Qt"
+  modalDescription : The project aims to optimize the energy consumption of a non-terrestial network using multiple optimization algorithms for edge computing (MAEC). The project is a simulator that allows to test the optimization algorithms and to compare their performance. The simulator handle both offline and online optimization. In this project, I developed a graphical interface, multiple greedy algorithms, a Q-learning algorithm, PSO, GA and DE.
+
+
+- name: QuantumÉTS - Founder & President
   i18n: quantum
   url : https://quantumets.etsmtl.ca/
   img: /static/assets/img/projects/quantum.jpg
@@ -10,7 +36,7 @@
   stack: "Technology used : Qiskit, Pennylane, Pulser, Python, NLP, Snowflurry"
   modalDescription : In the club, we participate in various competitions such as QHack and BIG Quantum Hackathon, and organize events to promote quantum computing awareness. For instance, we hosted a workshop on quantum information theory and held multiple lectures on the subject. As the founder of the club, I manage several projects including Vehicle Speed Optimization using Hamiltonian and Quantum Education Game, besides organizing events.
 
-- name: Various Quantum Algorithms
+- name: Various Quantum Algorithms Education Notebooks
   i18n: quantum_algo
   url : https://github.com/SimonR99/qiskit-algorithm
   img: /static/assets/img/projects/quantum_algo.png
@@ -21,6 +47,7 @@
 - name: Quantum Education Game
   i18n: quantum_game
   url : https://simonr99.itch.io/entangledexplorer
+  video: https://www.youtube.com/watch?v=ki_t9ciqDEw&ab_channel=SimonRoy
   img: /static/assets/img/projects/quantum_game.png
   desc: A game to teach quantum computing concepts to the general public.
   stack: "Technology used : Godot, Qiskit, Python"
@@ -28,20 +55,18 @@
 
 - name: Capra - student club
   i18n: capra
-  #gh_user: jarrekk
-  #repo: Jalpc
   url : https://www.clubcapra.com/
   img: /static/assets/img/projects/markhor.jpg
   desc: In the student club, I lead the navigation and mapping project
   stack: "Technology used : Python, C++, ROS2, ROS"
   modalDescription : The goal of the club is to design and program robot dedicated to search and rescue in rugged environments. We participated to the EnRicH competition in 2023 and we won "Best in class - search and rescue".
 
-- name: Light control with camera
+- name: Light control with pose estimation
   i18n: light
   img: /static/assets/img/projects/camera.jpg
   desc: The project had the goal to control my domotic system with a camera.
   stack: "Technology used : Python, OpenCV, Raspberry pi and Home assistant"
-  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a script which makes it possible to control the lights with a camera. For exemple, when I'm watching a movie and I want to turn off the light, I just point the light and it turns off.
+  modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a python software which makes it possible to control the lights with a camera using pose estimation. For exemple, when I'm watching a movie and I want to turn off the light, I just point the light and it turns off.
 
 - name: Drybox
   i18n: drybox
@@ -61,5 +86,5 @@
   i18n: covid
   img: /static/assets/img/projects/neat.png
   stack: "Technology used : Python, Pygame"
-  desc: For this project, I created a simple game and an AI. I used a genetic algorithm for this AI.
+  desc: For this project, I created a simple game and an AI. I used a genetic algorithm for this AI (NEAT).
   modalDescription: The first step was to build a game that can be controlled by a robot. The goal of the game is to avoid viruses. The game allows you to play or to watch a robot learn how the game works. The robot uses an algorithm called NEAT (NeuroEvolution of Augmenting Topologies). It is a genetic algorithm for the generation of evolving artificial neural networks.

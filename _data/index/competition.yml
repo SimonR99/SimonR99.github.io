@@ -1,8 +1,26 @@
-# competiton data
-- name: EnRicH
+# competiton d 2024ata
+- name: ELROB
+  id : elrob24
+  desc : I participated in ELROB, Europe’s toughest and longest-running field robotics event, with the CAPRA robotics club. I focused on mapping and navigation and AI for a search-and-rescue scenario. For the new student club robot, Rove, I developed the Docker architecture, ROS2 core system, the tracking AI, inverse kinematics for the arm, exploration algorithm, Gazebo simulation, and 3D SLAM mapping. I also contributed to the hardware interface.
+  position : "Best effort"
+
+- name: ETH Zurich Quantum Hackathon
+  id : eth_24
+  desc : In this competition, we solved a variation of the VRP problem using distributed quantum machine learning algorithms.
+  position : "Honorable mention from NVIDIA"
+
+
+- name: Xanadu QHack24
+  id : qhack24
+  desc : This competition was similar to the previous one, but in this one, we also developped circuit cutting algorithms to reduce noise in quantum circuits.
+  position : "We finished 16/643 on the coding challenge"
+
+
+- name: EnRicH 2023
   id : enrich23
   desc : I did this competition with the student club CAPRA where I was in charge of the mapping and navigation of the robot. The goal was to rescue a dummy in a radioactive nuclear power plant.
   position : "Best in class in search and rescue challenge"
+
 
 - name: Xanadu QHack23
   id : qhack23
@@ -21,4 +39,4 @@
 - name: Nasa space app challence 2020
   id : space_app_2020
   desc : During this competition, my team developed artificial intelligence capable of predicting forest fires based on satellite data. (First place (Halifax))
-  position : "We finish first in our section"
+  position : "We finish first in our division"
