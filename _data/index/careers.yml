@@ -101,6 +101,8 @@
     i18n: lion_job
   icon: fa-plus-square
   present: false
+  company_logo: /static/assets/img/landing/lion.png
+  company_url: https://thelionelectric.com/
 
 - name:
     detail: "CEGEP degree in Electronics (Computers and Networks)"
@@ -115,6 +117,8 @@
     detail: student
     i18n: cegep_job
   icon: fa-plus-square
+  company_logo: /static/assets/img/landing/cegep.png
+  company_url: https://www.cegep-lanaudiere.qc.ca/
 
 - name:
     detail: Equitel
@@ -129,3 +133,5 @@
     detail: technology analyst
     i18n: equitel_job
   icon: fa-plus-square
+  company_logo: /static/assets/img/landing/equi-tel.png
+  company_url: https://equi-tel.com/

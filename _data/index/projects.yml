@@ -18,8 +18,8 @@
   img: /static/assets/img/projects/shepherd.png
   desc: A semantic mapping system for a mobile robot.
   stack: "Technology used : Habitat-Sim, Gym, Pytorch, HuggingFace, DB-SCAN, FastSAM, CLIP, BLIP"
-  modalDescription : Shepherd is a semantic mapping system for a mobile robot. The system is able to find objects, associate a meaning to them and let the user query the map for later use.
-  tags: [AI, Robotics]
+  modalDescription : Shepherd is a semantic mapping system for a mobile robot. The system can identify objects, associate meanings to them, and allow users to query the map for later use. This gives robot the ability to understand their environment and navigate through it. In this project, I worked on multiple AI pipelines (CLIP, BLIP, FastSAM, DBSCAN, DAN, YOLO-World) and developed a modular architecture to ensure ease of use.
+  tags: [AI, Robotics, Team Project]
 
 - name: NTN simulator (Q-learning & PSO)
   i18n: optimization_ntn
@@ -28,7 +28,7 @@
   desc: Optimization of a non-terrestial network using multiple optimization algorithms.
   stack: "Technology used : Q-learning, PSO, Python, Genetic Algorithm, Differential Evolution, Qt"
   modalDescription : The project aims to optimize the energy consumption of a non-terrestial network using multiple optimization algorithms for edge computing (MAEC). The project is a simulator that allows to test the optimization algorithms and to compare their performance. The simulator handle both offline and online optimization. In this project, I developed a graphical interface, multiple greedy algorithms, a Q-learning algorithm, PSO, GA and DE.
-  tags: [AI, SWE]
+  tags: [AI, SWE, Team Project]
 
 
 - name: QuantumÉTS - Founder & President
@@ -38,7 +38,7 @@
   desc: QuantumÉTS is a student club that aims to democratize quantum computing, participate into various quantum computing challenges and organize events.
   stack: "Technology used : Qiskit, Pennylane, Pulser, Python, NLP, Snowflurry"
   modalDescription : In the club, we participate in various competitions such as QHack and BIG Quantum Hackathon, and organize events to promote quantum computing awareness. For instance, we hosted a workshop on quantum information theory and held multiple lectures on the subject. As the founder of the club, I manage several projects including Vehicle Speed Optimization using Hamiltonian and Quantum Education Game, besides organizing events.
-  tags: [Quantum, SWE]
+  tags: [Quantum, Leadership]
 
 - name: Various Quantum Algorithms Education Notebooks
   i18n: quantum_algo
@@ -57,16 +57,16 @@
   desc: A game to teach quantum computing concepts to the general public.
   stack: "Technology used : Godot, Qiskit, Python"
   modalDescription : Entangled Explorer is a game that aims to teach quantum computing concepts to the general public. The game is a 2D platformer where the player has to solve puzzles using quantum mechanics. The game is available on itch.io.
-  tags: [Quantum, Games]
+  tags: [Quantum, Games, Team Project]
 
-- name: Capra - student club
+- name: Capra - Student Club
   i18n: capra
   url : https://www.clubcapra.com/
   img: /static/assets/img/projects/markhor.jpg
   desc: In the student club, I lead the navigation and mapping project
   stack: "Technology used : Python, C++, ROS2, ROS"
   modalDescription : The goal of the club is to design and program robot dedicated to search and rescue in rugged environments. We participated to the EnRicH competition in 2023 and we won "Best in class - search and rescue".
-  tags: [Robotics, SWE]
+  tags: [Robotics, SWE, Team Project]
 
 - name: Light control with pose estimation
   i18n: light
@@ -82,7 +82,7 @@
   desc: The project is a IOT server that can perform OTA firmware upgrade.
   stack: "Technology used : Django, Arduino, SQLite"
   modalDescription : This project was done in collaboration with an EE student. I took care of the programming part and he took care of the mechanical and electrical part. We created a tool to keep 3D printing spools dry. For this project, I used Django to make a responsive website that offers the possibility to see the humidity history of the dry box, to provide an authentication system and to provide an update firmware server for an esp8266.
-  tags: [IOT, SWE]
+  tags: [IOT, SWE, Team Project]
 
 - name: Magic Wand (Remote)
   i18n: wand
