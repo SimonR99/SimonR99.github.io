@@ -1,31 +1,43 @@
 {% for project in site.data.index.projects %}
 <!-- Modal -->
 <div class="modal fade" id="{{project.i18n}}Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title" id="exampleModalLabel">{{project.name}}</h3>
-                <div class="modal-body">
-                    {{project.desc}}
-                </div>
-                <img class="card-img-top" src="{{ project.img | prepend: site.baseurl }}" alt="Card image cap">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
             </div>
             <div class="modal-body">
-                {{project.modalDescription}}
-                <hr>
-                {{project.stack}}
-                
-                {% if project.url %}
-                    <hr>
-                    Link : <a href="{{ project.url }}" target="_blank" class="button"><span class="navy">{{ project.url }}</span></a>
-                {% endif %}
-                {% if project.video %}
-                    <hr>
-                    Video : <a href="{{ project.video }}" target="_blank" class="button"><span class="navy">{{ project.video }}</span></a>
-                {% endif %}
-            </div>          
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="row">
+                    <div class="col-md-6 text-center mb-4">
+                        <div class="modal-image-container">
+                            <img class="img-fluid rounded" src="{{ project.img | prepend: site.baseurl }}" alt="Project image">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="mb-3">Description</h4>
+                        <p>{{project.modalDescription}}</p>
+                        
+                        <h4 class="mb-3 mt-4">Technologies</h4>
+                        <div class="tech-stack">{{project.stack}}</div>
+                        
+                        {% if project.url %}
+                        <div class="mt-4">
+                            <h4>Project Link</h4>
+                            <a href="{{ project.url }}" target="_blank" class="btn btn-outline-primary"><i class="fa fa-external-link"></i> Visit Project</a>
+                        </div>
+                        {% endif %}
+                        
+                        {% if project.video %}
+                        <div class="mt-4">
+                            <h4>Demo Video</h4>
+                            <a href="{{ project.video }}" target="_blank" class="btn btn-outline-primary"><i class="fa fa-play-circle"></i> Watch Demo</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -38,59 +50,71 @@
             <h1><span data-i18n="projects.my_projects">My Projects</span></h1>
         </div>
     </div>
+
+    <!-- Project cards section -->
     <div class="row display-flex">
         {% for project in site.data.index.projects %}
-        {% assign loopindex = forloop.index | modulo: 2 %}
-        {% if forloop.last %}
-        {% if forloop.last == forloop.first %}
-        <div class="col-sm-6 wow col-sm-offset-3 zoomIn" >
-            {% else %}
-            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
-                {% endif %}
-                {% else %}
-                <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
-                    {% endif %}
-                    <div class="team-member">
-                        {% if project.stack %}
-                        <!-- Button trigger modal -->
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                                </div>
-                                <div class="flip-card-back flip-card-text img-responsive img-circle img-small">
-                                    <p class="flip-card-text">{{project.stack}}</p>
-                                </div>
+        {% assign loopindex = forloop.index | modulo: 3 %}
+        <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% elsif loopindex == 2 %} fadeInUp {% else %} fadeInRight {% endif %}">
+            <div class="team-member project-card">
+                <div class="project-image">
+                    {% if project.stack %}
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="{{ project.img | prepend: site.baseurl }}" class="img-fluid" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="tech-stack">{{project.stack}}</div>
                             </div>
                         </div>
-                        {% else %}
-                        <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
-                        {% endif %}
-                        <h4>
-                            {% if project.url %}
-                            <a href="{{ project.url }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                            {% elsif project.repo %}
-                            <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
-                            {% else %}
-                            <span class="navy">{{ project.name }}</span>
-                            {% endif %}
-                        </h4>
-                        <p><span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#{{project.i18n}}Modal">About that project</button>
-                        <br>
-                        <br>
-                        <br>
-                        {% if project.repo %}
-                        <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
-                            <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
-                            <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
-                            <div style="height: 10px;"></div>
-                        </div>
-                        {% endif %}
                     </div>
+                    {% else %}
+                    <img src="{{ project.img | prepend: site.baseurl }}" class="img-fluid" alt="">
+                    {% endif %}
                 </div>
-                {% endfor %}
+                
+                <div class="project-info">
+                    <h4>
+                        {% if project.url %}
+                        <a href="{{ project.url }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
+                        {% elsif project.repo %}
+                        <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank"><span class="navy">{{ project.name }}</span></a>
+                        {% else %}
+                        <span class="navy">{{ project.name }}</span>
+                        {% endif %}
+                    </h4>
+                    
+                    <p class="project-desc"><span data-i18n="projects.{{ project.i18n }}">{{ project.desc }}</span></p>
+                    
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#{{project.i18n}}Modal">
+                        Learn More
+                    </button>
+                    
+                    {% if project.repo %}
+                    <div class="github-stats">
+                        <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
+                            <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" class="btn btn-white btn-xs">
+                                <i class="fa fa-star"></i> Stars
+                            </a>
+                            <a target="_blank" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network" class="btn btn-white btn-xs">
+                                <i class="fa fa-code-fork"></i> Forks
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <!-- Keep the tags display but remove the click functionality -->
+                <div class="project-tags">
+                    {% for tag in project.tags %}
+                    <span class="project-tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
             </div>
         </div>
-        <br>
+        {% endfor %}
+    </div>
+</div>
+<br>
         

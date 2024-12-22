@@ -7,9 +7,10 @@
   url : https://github.com/SimonR99/goat-planner
   video: https://youtu.be/d-8-XF0w_FI
   img: /static/assets/img/projects/goat_brain.png
-  desc: A fine-tuned agent system that controls a robot using higher level instructions. 
+  desc: A fine-tuned agent system (STT, LLM, TTS) that controls a robot using higher level instructions. 
   stack: "Technology used : HuggingFace, LoRA, ROS2, RAG, Behavior Tree"
   modalDescription : Goat Brain is a fine-tuned agent system that controls a robot using higher level instructions. The system is able to perform tasks by generating a behavior tree compatible with ROS2 and propose a visual interface to let the user discuss with the system.
+  tags: [AI, Robotics]
 
 - name: Shepherd
   i18n: shepherd
@@ -18,6 +19,7 @@
   desc: A semantic mapping system for a mobile robot.
   stack: "Technology used : Habitat-Sim, Gym, Pytorch, HuggingFace, DB-SCAN, FastSAM, CLIP, BLIP"
   modalDescription : Shepherd is a semantic mapping system for a mobile robot. The system is able to find objects, associate a meaning to them and let the user query the map for later use.
+  tags: [AI, Robotics]
 
 - name: NTN simulator (Q-learning & PSO)
   i18n: optimization_ntn
@@ -26,6 +28,7 @@
   desc: Optimization of a non-terrestial network using multiple optimization algorithms.
   stack: "Technology used : Q-learning, PSO, Python, Genetic Algorithm, Differential Evolution, Qt"
   modalDescription : The project aims to optimize the energy consumption of a non-terrestial network using multiple optimization algorithms for edge computing (MAEC). The project is a simulator that allows to test the optimization algorithms and to compare their performance. The simulator handle both offline and online optimization. In this project, I developed a graphical interface, multiple greedy algorithms, a Q-learning algorithm, PSO, GA and DE.
+  tags: [AI, SWE]
 
 
 - name: QuantumÉTS - Founder & President
@@ -35,14 +38,16 @@
   desc: QuantumÉTS is a student club that aims to democratize quantum computing, participate into various quantum computing challenges and organize events.
   stack: "Technology used : Qiskit, Pennylane, Pulser, Python, NLP, Snowflurry"
   modalDescription : In the club, we participate in various competitions such as QHack and BIG Quantum Hackathon, and organize events to promote quantum computing awareness. For instance, we hosted a workshop on quantum information theory and held multiple lectures on the subject. As the founder of the club, I manage several projects including Vehicle Speed Optimization using Hamiltonian and Quantum Education Game, besides organizing events.
+  tags: [Quantum, SWE]
 
 - name: Various Quantum Algorithms Education Notebooks
   i18n: quantum_algo
   url : https://github.com/SimonR99/qiskit-algorithm
-  img: /static/assets/img/projects/quantum_algo.png
+  img: /static/assets/img/projects/quantum_algo_2.png
   desc: Project exploring quantum algorithms and their practical applications across different data sets.
   stack: "Technology used : Qiskit, Python, NLP"
   modalDescription : The Qiskit Algorithm Notebook repository features Jupyter notebooks delving into various quantum algorithms and their applications, like quantum clustering with the Iris dataset and text classification using Quantum Support Vector Machines for sentiment analysis.
+  tags: [Quantum, AI]
 
 - name: Quantum Education Game
   i18n: quantum_game
@@ -52,6 +57,7 @@
   desc: A game to teach quantum computing concepts to the general public.
   stack: "Technology used : Godot, Qiskit, Python"
   modalDescription : Entangled Explorer is a game that aims to teach quantum computing concepts to the general public. The game is a 2D platformer where the player has to solve puzzles using quantum mechanics. The game is available on itch.io.
+  tags: [Quantum, Games]
 
 - name: Capra - student club
   i18n: capra
@@ -60,6 +66,7 @@
   desc: In the student club, I lead the navigation and mapping project
   stack: "Technology used : Python, C++, ROS2, ROS"
   modalDescription : The goal of the club is to design and program robot dedicated to search and rescue in rugged environments. We participated to the EnRicH competition in 2023 and we won "Best in class - search and rescue".
+  tags: [Robotics, SWE]
 
 - name: Light control with pose estimation
   i18n: light
@@ -67,6 +74,7 @@
   desc: The project had the goal to control my domotic system with a camera.
   stack: "Technology used : Python, OpenCV, Raspberry pi and Home assistant"
   modalDescription : I got some smart lights as a birthday present and these can be controlled by phone or by voice with google. As I found that these methods were not worthy of the 21st century, I took a raspberry pi, installed home assistant and I created a python software which makes it possible to control the lights with a camera using pose estimation. For exemple, when I'm watching a movie and I want to turn off the light, I just point the light and it turns off.
+  tags: [AI, IOT]
 
 - name: Drybox
   i18n: drybox
@@ -74,6 +82,7 @@
   desc: The project is a IOT server that can perform OTA firmware upgrade.
   stack: "Technology used : Django, Arduino, SQLite"
   modalDescription : This project was done in collaboration with an EE student. I took care of the programming part and he took care of the mechanical and electrical part. We created a tool to keep 3D printing spools dry. For this project, I used Django to make a responsive website that offers the possibility to see the humidity history of the dry box, to provide an authentication system and to provide an update firmware server for an esp8266.
+  tags: [IOT, SWE]
 
 - name: Magic Wand (Remote)
   i18n: wand
@@ -81,6 +90,7 @@
   stack: "Technology used : Arduino, C, 3D printing"
   desc: This is a wand that can control the color of a lamp. I use C language for this project.
   modalDescription : My nephew wanted to have a magic wand and control things around the house. I created a magic wand that allows him to control the color of a lamp and make a bear talk. The project is mainly composed of an Arduino, an accelerometer, and a radio communication system. I used the C language to carry out the project.
+  tags: [Electronics, IOT]
 
 - name: AI vs Covid (Game)
   i18n: covid
@@ -88,3 +98,4 @@
   stack: "Technology used : Python, Pygame"
   desc: For this project, I created a simple game and an AI. I used a genetic algorithm for this AI (NEAT).
   modalDescription: The first step was to build a game that can be controlled by a robot. The goal of the game is to avoid viruses. The game allows you to play or to watch a robot learn how the game works. The robot uses an algorithm called NEAT (NeuroEvolution of Augmenting Topologies). It is a genetic algorithm for the generation of evolving artificial neural networks.
+  tags: [AI, Games]
