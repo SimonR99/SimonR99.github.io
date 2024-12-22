@@ -12,13 +12,30 @@
             {% assign loopindex = forloop.index | modulo: 2 %}
                 <div class="vertical-timeline-block">
                     <div class="vertical-timeline-icon {% if career.present ==  true %} navy-bg-present {% else %} navy-bg {% endif %} wow rotateIn">
-                        <i class="fa {{ career.icon }}"></i>
+                        {% if career.company_logo %}
+                            <img src="{{ career.company_logo }}" alt="{{ career.name.detail }}" class="company-logo">
+                        {% else %}
+                            <i class="fa {{ career.icon }}"></i>
+                        {% endif %}
                     </div>
                     <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
-                        <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
-                        <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }} </span></p>
-                        <span class="vertical-date"><span data-i18n="career.{{ career.date.i18n }}"> {{ career.date.detail }} </span>
-                        <br/> <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small> </span>
+                        <div class="career-header">
+                            {% if career.company_url %}
+                                <h2><a href="{{ career.company_url }}" target="_blank" rel="noopener noreferrer">
+                                    <span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span>
+                                </a></h2>
+                            {% else %}
+                                <h2><span data-i18n="career.{{ career.name.i18n }}">{{ career.name.detail }}</span></h2>
+                            {% endif %}
+                            <span class="vertical-date">
+                                <span data-i18n="career.{{ career.date.i18n }}">{{ career.date.detail }}</span>
+                                <br/>
+                                <small><span data-i18n="career.{{ career.job.i18n }}">{{ career.job.detail }}</span></small>
+                            </span>
+                        </div>
+                        <div class="career-description">
+                            <p><span data-i18n="career.{{ career.desc.i18n }}">{{ career.desc.detail }}</span></p>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
@@ -26,3 +43,52 @@
         </div>
     </div>
 </div>
+
+<style>
+.vertical-timeline-icon {
+    overflow: hidden;
+}
+
+.company-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.career-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.career-header h2 {
+    margin: 0;
+}
+
+.career-header a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.career-header a:hover {
+    color: #3385FF;
+}
+
+.vertical-timeline-content {
+    padding: 25px;
+}
+
+.career-description {
+    margin-top: 10px;
+}
+
+.navy-bg-present {
+    background-color: #1ab394 !important;
+}
+
+.vertical-timeline-block:hover .vertical-timeline-content {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+</style>

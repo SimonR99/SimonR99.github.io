@@ -14,14 +14,16 @@
     detail: Research Intern
     i18n: sherbrooke_job
   icon: fa-plus-square
-  present: true
+  present: false
+  company_logo: /static/assets/img/landing/udes.png
+  company_url: https://www.usherbrooke.ca/
 
 
 - name:
     detail: Planetary robotics engineer (Internship)
     i18n: csa
   desc:
-    detail: I work as a intern in planetary robotics at the Canadian Space Agency (CSA) in Montréal. I am responsible for managing and developing a mission planing tool for the lunar rover. I mainly use <b>Django and React</b>.
+    detail: I work as a intern in planetary robotics at the Canadian Space Agency (CSA) in Montréal. I developed a mission planning tool for the canadian lunar rover. I mainly use <b>Django and React</b> and contributed to the development of path planning algorithms. (RRT* and GA) I use Agile methodologies and managed an Openshift cluster.
     i18n: csa_desc
   date:
     detail: Aug. 2022 - Dec 2023
@@ -30,7 +32,9 @@
     detail: Planetary robotics intern
     i18n: csa_job
   icon: fa-plus-square
-  present: true
+  present: false
+  company_logo: /static/assets/img/landing/csa.png
+  company_url: https://www.asc-csa.gc.ca/eng/
 
 - name:
     detail: Lab assistant (Algorithmic aspects of quantum computing)
@@ -45,7 +49,10 @@
     detail: ÉTS lab assistant
     i18n: ets_job
   icon: fa-plus-square
-  present: true
+  present: false
+  company_logo: /static/assets/img/landing/ets.png
+  company_url: https://www.etsmtl.ca/
+
 
 - name:
     detail: Orolia (Internship)
@@ -60,7 +67,9 @@
     detail: Software engineer intern
     i18n: orolia_job
   icon: fa-plus-square
-  present: true
+  present: false
+  company_logo: /static/assets/img/landing/orolia.png
+  company_url: https://www.orolia.com/
 
 - name:
     detail: University (Software engineering)
@@ -75,6 +84,8 @@
     detail: student
     i18n: ets_sw_job
   icon: fa-plus-square
+  company_logo: /static/assets/img/landing/ets.png
+  company_url: https://www.etsmtl.ca/
 
 - name:
     detail: Lion electric (Internship)
@@ -89,7 +100,7 @@
     detail: Hardware design intern
     i18n: lion_job
   icon: fa-plus-square
-  present: true
+  present: false
 
 - name:
     detail: "CEGEP degree in Electronics (Computers and Networks)"
