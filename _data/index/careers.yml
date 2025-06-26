@@ -15,7 +15,7 @@
     i18n: mila_job
   icon: fa-plus-square
   present: true
-  company_logo: /static/assets/img/landing/mila.png
+  company_logo: /static/assets/img/landing/mila.svg
   company_url: https://mila.quebec/
 
 - name:
