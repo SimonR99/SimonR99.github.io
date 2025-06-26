@@ -2,6 +2,23 @@
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 
 - name:
+    detail: "Master's student at MILA"
+    i18n: mila
+  desc:
+    detail: I began a master's degree at MILA in January 2025 under Professor Giovanni Beltrame. My research domain is artificial intelligence applied to robotics.
+    i18n: mila_desc
+  date:
+    detail: Jan. 2025 - Present
+    i18n: mila_date
+  job:
+    detail: Master's student
+    i18n: mila_job
+  icon: fa-plus-square
+  present: true
+  company_logo: /static/assets/img/landing/mila.png
+  company_url: https://mila.quebec/
+
+- name:
     detail: Quantum Machine Learning Research (Internship)
     i18n: sherbrooke (UdeS)
   desc:
