@@ -444,6 +444,14 @@ strong {
   color: var(--muted);
 }
 
+.entry-note {
+  font-family: var(--sans);
+  font-size: var(--step--1);
+  color: var(--ink);
+  margin-left: 0.75rem;
+  white-space: nowrap;
+}
+
 .entry-detail {
   margin-top: 0.35rem;
 }

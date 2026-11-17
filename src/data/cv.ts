@@ -3,6 +3,8 @@ export interface Entry {
   org: string;
   orgUrl?: string;
   dates: string;
+  /** Short distinction shown after the institution, e.g. a GPA or honours. */
+  note?: string;
   detail?: string;
 }
 
@@ -12,6 +14,7 @@ export const education: Entry[] = [
     org: 'Polytechnique Montréal and Mila',
     orgUrl: 'https://mila.quebec/',
     dates: '2026 – present',
+    note: 'GPA 4.0/4.0',
     detail: 'Advised by Giovanni Beltrame. World models, language-conditioned planning and vision-language reward models.',
   },
   {
@@ -19,12 +22,14 @@ export const education: Entry[] = [
     org: 'Polytechnique Montréal and Mila',
     orgUrl: 'https://mila.quebec/',
     dates: '2025 – 2026',
+    note: 'GPA 4.0/4.0',
   },
   {
     title: 'B.Eng., Software engineering',
     org: 'École de technologie supérieure (ÉTS)',
     orgUrl: 'https://www.etsmtl.ca/',
     dates: '2020 – 2024',
+    note: 'Graduated with honours',
   },
 ];
 

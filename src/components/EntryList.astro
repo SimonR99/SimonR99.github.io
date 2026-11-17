@@ -17,6 +17,7 @@ const { entries } = Astro.props;
       </div>
       <p class="entry-org">
         {e.orgUrl ? <a href={e.orgUrl} rel="noopener noreferrer">{e.org}</a> : e.org}
+        {e.note && <span class="entry-note">{e.note}</span>}
       </p>
       {e.detail && <p class="entry-detail">{e.detail}</p>}
     </li>
