@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
+# Manual only: the site is currently published from the gh-pages branch with
+# `npm run deploy`. To go back to automatic deploys on every push, restore the
+# `push` trigger below and set Settings > Pages > Source to "GitHub Actions".
 on:
-  push:
-    branches: [master, main]
   workflow_dispatch:
 
 permissions:

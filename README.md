@@ -2,7 +2,7 @@
 
 Personal site of Simon Roy: PhD student in robot learning at Polytechnique Montréal and Mila, co-founder and CTO of [Aquilix](https://www.aquilix.ca/).
 
-Built with [Astro](https://astro.build/) and deployed to GitHub Pages by `.github/workflows/deploy.yml`.
+Built with [Astro](https://astro.build/) and published on GitHub Pages from the `gh-pages` branch.
 
 ## Editing content
 
@@ -27,3 +27,11 @@ npm install
 npm run dev     # http://localhost:4001
 npm run build   # outputs to dist/
 ```
+
+## Publishing
+
+```sh
+npm run deploy
+```
+
+This builds the site and pushes `dist/` to the `gh-pages` branch, which GitHub Pages serves. The live site updates about a minute later. Commit and push your source changes to `master` as usual; that does not publish anything on its own.
