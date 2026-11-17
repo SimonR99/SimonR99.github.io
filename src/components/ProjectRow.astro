@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import type { Project } from '../data/projects';
+
+interface Props {
+  project: Project;
+}
+
+const { project: p } = Astro.props;
+---
+
+<li class="project">
+  <Image src={p.img} alt={p.imgAlt} widths={[240, 480]} sizes="(max-width: 760px) 100vw, 240px" class="project-img" />
+  <div>
+    <h3 class="entry-title">{p.name}</h3>
+    {p.context && <p class="entry-org">{p.context}</p>}
+    <p class="entry-detail">{p.desc}</p>
+    {p.links.length > 0 && (
+      <p class="meta pub-meta">
+        {p.links.map((l) => <a href={l.href}>{l.label}</a>)}
+      </p>
+    )}
+  </div>
+</li>

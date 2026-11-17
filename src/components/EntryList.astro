@@ -1,0 +1,24 @@
+---
+import type { Entry } from '../data/cv';
+
+interface Props {
+  entries: Entry[];
+}
+
+const { entries } = Astro.props;
+---
+
+<ol class="entries">
+  {entries.map((e) => (
+    <li class="entry">
+      <div class="entry-head">
+        <h3 class="entry-title">{e.title}</h3>
+        <span class="meta entry-dates">{e.dates}</span>
+      </div>
+      <p class="entry-org">
+        {e.orgUrl ? <a href={e.orgUrl} rel="noopener noreferrer">{e.org}</a> : e.org}
+      </p>
+      {e.detail && <p class="entry-detail">{e.detail}</p>}
+    </li>
+  ))}
+</ol>
