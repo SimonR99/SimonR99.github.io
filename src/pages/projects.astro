@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+import ProjectRow from '../components/ProjectRow.astro';
+import { projects, projectGroups } from '../data/projects';
+
+const slug = (s: string) => s.toLowerCase().replace(/[^a-z]+/g, '-');
+---
+
+<Layout
+  title="Projects | Simon Roy"
+  description="Robotics, AI and quantum computing projects by Simon Roy, plus a few side projects."
+>
+  <Header />
+  <main id="main">
+    <div class="wrap page-intro">
+      <h1>Projects</h1>
+      <p>
+        Robotics, AI and quantum computing work from student clubs, courses and my own time. For research, see the
+        <a href="/#research">papers</a>.
+      </p>
+    </div>
+
+    {projectGroups.map((group) => (
+      <Section id={slug(group)} title={group}>
+        <ul class="project-list">
+          {projects.filter((p) => p.group === group).map((p) => <ProjectRow project={p} />)}
+        </ul>
+      </Section>
+    ))}
+  </main>
+</Layout>

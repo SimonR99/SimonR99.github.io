@@ -1,0 +1,24 @@
+---
+import { profile } from '../data/profile';
+
+const links = [
+  { href: '/#research', label: 'Research' },
+  { href: '/#aquilix', label: 'Aquilix' },
+  { href: '/#experience', label: 'Experience' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/#contact', label: 'Contact' },
+];
+---
+
+<header class="site-header">
+  <div class="wrap site-header-inner">
+    <a class="site-name" href="/">{profile.name}</a>
+    <nav aria-label="Sections">
+      <ul>
+        {links.map((l) => (
+          <li><a href={l.href}>{l.label}</a></li>
+        ))}
+      </ul>
+    </nav>
+  </div>
+</header>

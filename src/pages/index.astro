@@ -1,0 +1,171 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Section from '../components/Section.astro';
+import EntryList from '../components/EntryList.astro';
+import portrait from '../assets/portrait.png';
+import { profile, aquilix } from '../data/profile';
+import { news } from '../data/news';
+import { publications, bibtex } from '../data/publications';
+import { education, experience, teaching, honors } from '../data/cv';
+import { projects } from '../data/projects';
+import ProjectRow from '../components/ProjectRow.astro';
+
+const featured = projects.filter((p) => p.featured);
+---
+
+<Layout>
+  <Header />
+  <main id="main">
+    <section class="intro" aria-labelledby="intro-name">
+      <div class="wrap intro-grid">
+        <Image
+          src={portrait}
+          alt="Portrait of Simon Roy"
+          class="portrait"
+          width={320}
+          height={320}
+          loading="eager"
+          fetchpriority="high"
+        />
+        <div class="intro-text">
+          <h1 id="intro-name">{profile.name}</h1>
+          <p class="lede">
+            I work on robot learning: world models, language-conditioned planning and vision-language reward models.
+          </p>
+          <p>
+            I am a PhD student at Polytechnique Montréal and <a href="https://mila.quebec/">Mila</a>, advised by
+            <a href={profile.advisor.url}>{profile.advisor.name}</a>. I am also co-founder and CTO of
+            <a href="#aquilix">Aquilix</a>, where we put computer vision to work on construction and industrial sites.
+          </p>
+          <ul class="link-row" aria-label="Profiles">
+            <li><a href={profile.scholar}>Google Scholar</a></li>
+            <li><a href={profile.github}>GitHub</a></li>
+            <li><a href={profile.linkedin}>LinkedIn</a></li>
+            <li><a href="#contact">Email</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <Section id="news" title="News">
+      <ol class="news">
+        {news.map((n) => (
+          <li>
+            <span class="meta">{n.date}</span>
+            <span>{n.href ? <a href={n.href}>{n.text}</a> : n.text}</span>
+          </li>
+        ))}
+      </ol>
+    </Section>
+
+    <Section id="aquilix" title="Company">
+      <div class="company-head">
+        <a href={aquilix.url} class="company-logo" aria-label="Aquilix website">
+          <img src={aquilix.logo} alt="Aquilix" width="694" height="217" />
+        </a>
+        <span class="meta">Co-founder and CTO, since {aquilix.since}</span>
+      </div>
+      <p class="company-summary">{aquilix.summary}</p>
+      <ul class="company-points">
+        {aquilix.points.map((p) => <li>{p}</li>)}
+      </ul>
+      <p class="more"><a href={aquilix.url}>Visit aquilix.ca</a></p>
+    </Section>
+
+    <Section id="research" title="Research">
+      <ol class="pubs">
+        {publications.map((pub) => (
+          <li class="pub">
+            <h3 class="pub-title">
+              <a href={pub.arxivUrl}>{pub.title}</a>
+            </h3>
+            <p class="pub-authors">
+              {pub.authors.map((a, i) => (
+                <>
+                  {a === profile.name ? <strong>{a}</strong> : a}
+                  {i < pub.authors.length - 1 ? ', ' : ''}
+                </>
+              ))}
+            </p>
+            <div class="meta pub-meta">
+              <span>arXiv preprint, {pub.date}</span>
+              <a href={pub.arxivUrl}>Abstract</a>
+              <a href={`https://arxiv.org/pdf/${pub.arxivId}`}>PDF</a>
+              {pub.code && <a href={pub.code}>Code</a>}
+              {pub.projectPage && <a href={pub.projectPage}>Project page</a>}
+              <details class="cite">
+                <summary>BibTeX</summary>
+                <pre>{bibtex(pub)}</pre>
+              </details>
+            </div>
+          </li>
+        ))}
+      </ol>
+      <p class="more"><a href={profile.scholar}>Full list on Google Scholar</a></p>
+    </Section>
+
+    <Section id="projects" title="Projects">
+      <ul class="project-list">
+        {featured.map((p) => <ProjectRow project={p} />)}
+      </ul>
+      <p class="more"><a href="/projects/">All projects, including side projects</a></p>
+    </Section>
+
+    <Section id="experience" title="Experience">
+      <EntryList entries={experience} />
+    </Section>
+
+    <Section id="teaching" title="Teaching">
+      <EntryList entries={teaching} />
+    </Section>
+
+    <Section id="education" title="Education">
+      <EntryList entries={education} />
+    </Section>
+
+    <Section id="honors" title="Distinctions">
+      <table class="honors">
+        <tbody>
+          {honors.map((h) => (
+            <tr>
+              <td class="meta">{h.year}</td>
+              <td><strong>{h.result}</strong>, {h.event}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </Section>
+
+    <Section id="contact" title="Contact">
+      <p>
+        Email is the best way to reach me about research, teaching or Aquilix.
+      </p>
+      <p class="email-slot">
+        <button type="button" class="button" id="reveal-email" data-encoded={profile.emailEncoded}>
+          Show email address
+        </button>
+      </p>
+      <ul class="link-row">
+        <li><a href={profile.scholar}>Google Scholar</a></li>
+        <li><a href={profile.github}>GitHub</a></li>
+        <li><a href={profile.linkedin}>LinkedIn</a></li>
+      </ul>
+    </Section>
+  </main>
+</Layout>
+
+<script>
+  const button = document.getElementById('reveal-email');
+  button?.addEventListener('click', () => {
+    const encoded = button.dataset.encoded ?? '';
+    const address = [...atob(encoded)].reverse().join('');
+    const link = document.createElement('a');
+    link.href = `mailto:${address}`;
+    link.textContent = address;
+    link.className = 'email-address';
+    button.replaceWith(link);
+    link.focus();
+  });
+</script>

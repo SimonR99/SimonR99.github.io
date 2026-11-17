@@ -1,0 +1,72 @@
+---
+import { profile } from '../data/profile';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = profile.title, description = profile.description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, profile.url).href;
+const ogImage = new URL('/og-portrait.jpg', profile.url).href;
+const updated = new Date().toLocaleDateString('en-CA', { month: 'long', year: 'numeric' });
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta name="color-scheme" content="light dark" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="/static/assets/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap"
+    />
+
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Person',
+        name: profile.name,
+        url: profile.url,
+        jobTitle: 'Co-founder and CTO',
+        worksFor: { '@type': 'Organization', name: 'Aquilix', url: 'https://www.aquilix.ca/' },
+        affiliation: [
+          { '@type': 'CollegeOrUniversity', name: 'Polytechnique Montréal' },
+          { '@type': 'ResearchOrganization', name: 'Mila - Quebec Artificial Intelligence Institute' },
+        ],
+        sameAs: [profile.github, profile.linkedin, profile.scholar],
+      })}
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>&copy; {year} {profile.name}. Last updated {updated}.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
