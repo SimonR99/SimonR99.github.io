@@ -35,6 +35,14 @@ export const education: Entry[] = [
 
 export const experience: Entry[] = [
   {
+    title: 'Organizer',
+    org: 'Montreal Robotics Summer School 2026, Mila',
+    orgUrl: 'https://sites.google.com/mila.quebec/mrss/',
+    dates: '2026',
+    detail:
+      'Part of the organizing team for the Montreal Robotics Summer School at Mila, a week-long program on robot learning.',
+  },
+  {
     title: 'Computer vision and machine learning engineer',
     org: 'NIO Robotics',
     dates: 'Summer 2025 – Apr 2026',

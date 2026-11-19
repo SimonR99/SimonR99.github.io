@@ -7,6 +7,11 @@ export interface NewsItem {
 /** Most recent first. Keep this to the last five or six items. */
 export const news: NewsItem[] = [
   {
+    date: 'Aug 2026',
+    text: 'Co-organized the Montreal Robotics Summer School 2026 at Mila.',
+    href: 'https://sites.google.com/mila.quebec/mrss/',
+  },
+  {
     date: 'Jul 2026',
     text: 'New first-author preprint on searching satellite image archives with text queries.',
     href: 'https://arxiv.org/abs/2607.28571',
